@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="./second.css">
+
+<div ng-controller="second">
+    <Div class="content-div">
+        <i class="bi bi-arrow-left icon" ng-click="navigate(backId)"></i>
+        <img class="car-image" ng-src="{{x.Driver.carinfo.constrCar}}" alt="">
+        <div class="driver-content-div">
+            <p class="driver-position" ng-style="{'color': x.Driver.carinfo.colorShade }">{{x.position}}</p>
+            <p class="driver-name" ng-style="{'color': x.Driver.carinfo.colorShade }">{{x.Driver.familyName}}
+                {{x.Driver.givenName}}</p>
+        </div>
+        <i class="bi bi-arrow-right icon-forward" ng-click="navigate(frontId)"></i>
+    </Div>
+    <div class="desc-div">
+        <div class="number-div">
+            <p class="number-content bold">{{x.position}} </p>
+            <p class="number-title title">Number</p>
+        </div>
+        <div class="wins-div">
+            <p class="wins-content bold">{{x.wins}} </p>
+            <p class="wins-title title">Wins</p>
+        </div>
+        <div class="nationality-div">
+            <p class="nationality-content bold">{{x.Driver.nationality}} </p>
+            <p class="nationality-title title">Nationality</p>
+        </div>
+        <div class="dob-div">
+            <p class="dob-content bold">{{x.Driver.dateOfBirth | myFormat}}</p>
+            <p class="dob-title title">DOB</p>
+        </div>
+        <div class="Constructor-div">
+            <p class="Constructor-content bold">{{x.Constructors[0].name}} </p>
+            <p class="Constructor-title title">Constructor</p>
+        </div>
+    </div>
+    <div class="btn-div">
+        <button ng-click="goHome('/')" class="btn btn-secondary">Home</button>
+    </div>
+</div>

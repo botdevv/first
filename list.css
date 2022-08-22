@@ -1,0 +1,111 @@
+#headerImage {
+    text-align: center;
+}
+
+#title {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.container {
+    background-color: #3435351F;
+    margin: 0 10% 0 10%;
+    border-radius: 3px;
+}
+
+.content-div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid #363333;
+    max-height: 100%;
+    padding: 10px;
+}
+
+.content-div:hover {
+    background-color: #F5F5F5;
+}
+
+.driver-number {
+    font-family: Roboto;
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+}
+
+.driver-div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 53px;
+    height: 53px;
+}
+
+.driver-name {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    color: #000000;
+}
+
+.points-div,
+.wins-div,
+.num-div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.points-num,
+.wins-num,
+.number {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    color: #000000;
+
+}
+
+.points-title,
+.wins-title,
+.num-title {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+}
+
+
+.car-image {
+    width: 40%;
+    height: 30%;
+}
+
+.inputDiv {
+    /* display: flex; */
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.search-tag {
+    width: 40%;
+    height: 40px;
+}

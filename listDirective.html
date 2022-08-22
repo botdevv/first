@@ -1,0 +1,22 @@
+<div class="container" ng-click='go({driverId:x.Driver.driverId})'>
+    <div class="content-div">
+        <p class="driver-number" ng-style="{'color': x.Driver.carinfo.colorShade }">{{x.position}}</p>
+        <div class="driver-div">
+            <img class="logo" ng-src="{{x.Driver.carinfo.constrLogo}}" alt="">
+            <p class="driver-name">{{x.Driver.givenName}} {{x.Driver.familyName}} </p>
+        </div>
+        <div class="points-div">
+            <p class="points-num">{{x.points}}</p>
+            <p class="points-title">Points</p>
+        </div>
+        <div class="wins-div">
+            <p class="wins-num">{{x.wins}}</p>
+            <p class="wins-title">Wins</p>
+        </div>
+        <div class="num-div">
+            <p class="number">{{x.Driver.permanentNumber}}</p>
+            <p class="num-title">Number</p>
+        </div>
+        <img class="car-image" ng-src="{{x.Driver.carinfo.constrCar}}" alt="">
+    </div>
+</div>

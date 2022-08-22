@@ -1,0 +1,13 @@
+<div ng-controller="list">
+    <div id="headerImage">
+        <img src="./f1-mini 1.png" alt="">
+    </div>
+    <!-- custom directives -->
+    <title></title>
+    <div class="inputDiv">
+        <input class="search-tag" type="text" ng-model="SearchDriver" placeholder="Search driver..">
+    </div>
+    <div ng-repeat="x in data | filter:search">
+        <content x="x" go="go(driverId)"></content>
+    </div>
+</div>
